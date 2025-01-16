@@ -262,6 +262,101 @@
             background-color: #ff7b1b;
             color: white;
         }
+
+        /* red-section */
+        .red-section {
+            background-color: rgb(230, 21, 21);
+            color: white;
+
+            padding: 3rem 1rem;
+        }
+
+        .red-section h1 {
+            text-align: center;
+            padding: 2rem 7rem;
+            font-size: 2.5rem;
+        }
+
+        .red-section span {
+            color: black;
+        }
+
+        .info-container {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 4rem;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info img {
+            width: 7rem;
+            height: 7rem;
+        }
+
+        .info-text h2 {
+            font-size: 2.5rem;
+        }
+
+        .info-text p {
+            margin-top: 1rem;
+        }
+
+        /* social links */
+
+        .social-links-container {
+            background-color: rgb(235, 232, 230);
+            padding: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 2rem;
+        }
+
+        .link img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .link p {
+            font-size: 0.8rem;
+        }
+
+        .link a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 0.3rem;
+            text-decoration: none;
+        }
+
+        .facebook {
+            color: rgb(63, 131, 208);
+        }
+
+        .instagram {
+            color: red;
+        }
+
+        .youtube {
+            color: red;
+        }
+
+        .linkedin {
+            color: rgb(63, 131, 208);
+        }
     </style>
 </head>
 
@@ -464,7 +559,71 @@
         </div>
     </section>
 
+    <section class="red-section">
+        <h1>Empower the <span>Education Sector</span> with Sustainable <br /> EdTech Solutions</h1>
+        <div class="info-container">
+            <div class="info">
+                <img src="<?php echo base_url('images/red-section/active-students.png') ?>" alt="active students">
+                <div class="info-text">
+                    <h2>247,968+</h2>
+                    <p>Active Students</p>
+                </div>
+            </div>
 
+            <div class="info">
+                <img src="<?php echo base_url('images/red-section/total-test.png') ?>" alt="total test submit">
+                <div class="info-text">
+                    <h2>1,884,350+</h2>
+                    <p>Total Test Submit</p>
+                </div>
+            </div>
+
+            <div class="info">
+                <img src="<?php echo base_url('images/red-section/total-institute.png') ?>" alt="Total institutes">
+                <div class="info-text">
+                    <h2>800+</h2>
+                    <p>Total institutes</p>
+                </div>
+            </div>
+
+            <div class="info">
+                <img src="<?php echo base_url('images/red-section/student-count.png') ?>" alt="Student Counts">
+                <div class="info-text">
+                    <h2>3+</h2>
+                    <p>Student Count</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-links-container">
+        <div class="social-links">
+            <div class="link">
+                <a href="https://www.facebook.com/edofoxonline?=undefined" target="_blank">
+                    <img src="<?php echo base_url('images/social-links/facebook.png') ?>" alt="Facebook">
+                    <p class="facebook">Facebook</p>
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://www.instagram.com/edofox_official/?=undefined" target="_blank">
+                    <img src="<?php echo base_url('images/social-links/Instagram.png') ?>" alt="Instagram">
+                    <p class="instagram">Instagram</p>
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://www.youtube.com/@edofox_official" target="_blank">
+                    <img src="<?php echo base_url('images/social-links/Youtube.png') ?>" alt="Youtube">
+                    <p class="youtube">Youtube</p>
+                </a>
+            </div>
+            <div class="link">
+                <a href="  https://www.linkedin.com/company/edofox/?=undefined" target="_blank">
+                    <img src="<?php echo base_url('images/social-links/Linkedin.png') ?>" alt="LinkedIn">
+                    <p class="linkedin">LinkedIn</p>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER: CONTACT US -->
 
