@@ -310,6 +310,53 @@
         }
 
         /* social links */
+
+        .social-links-container {
+            background-color: rgb(235, 232, 230);
+            padding: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 2rem;
+        }
+
+        .link img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .link p {
+            font-size: 0.8rem;
+        }
+
+        .link a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 0.3rem;
+            text-decoration: none;
+        }
+
+        .facebook {
+            color: rgb(63, 131, 208);
+        }
+
+        .instagram {
+            color: red;
+        }
+
+        .youtube {
+            color: red;
+        }
+
+        .linkedin {
+            color: rgb(63, 131, 208);
+        }
     </style>
 </head>
 
@@ -545,6 +592,35 @@
                     <h2>3+</h2>
                     <p>Student Count</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-links-container">
+        <div class="social-links">
+            <div class="link">
+                <a href="https://www.facebook.com/edofoxonline?=undefined" target="_blank">
+                    <img src="<?php echo base_url('images/social-links/facebook.png') ?>" alt="Facebook">
+                    <p class="facebook">Facebook</p>
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://www.instagram.com/edofox_official/?=undefined" target="_blank">
+                    <img src="<?php echo base_url('images/social-links/Instagram.png') ?>" alt="Instagram">
+                    <p class="instagram">Instagram</p>
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://www.youtube.com/@edofox_official" target="_blank">
+                    <img src="<?php echo base_url('images/social-links/Youtube.png') ?>" alt="Youtube">
+                    <p class="youtube">Youtube</p>
+                </a>
+            </div>
+            <div class="link">
+                <a href="  https://www.linkedin.com/company/edofox/?=undefined" target="_blank">
+                    <img src="<?php echo base_url('images/social-links/Linkedin.png') ?>" alt="LinkedIn">
+                    <p class="linkedin">LinkedIn</p>
+                </a>
             </div>
         </div>
     </section>
