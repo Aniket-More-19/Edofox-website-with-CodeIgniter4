@@ -217,6 +217,51 @@
                 /* End position */
             }
         }
+
+        /* services */
+        .services-container {
+            padding-top: 3rem;
+            background-color: rgb(216, 235, 252);
+        }
+
+        .services-container h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .service {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            padding: 2rem 9rem;
+            column-gap: 3rem;
+        }
+
+        .service img {
+            width: 30rem;
+            height: 30rem;
+
+            border-radius: 15rem;
+        }
+
+        .service-text p {
+            margin-top: 2rem;
+        }
+
+        .service-text button {
+            margin-top: 2rem;
+        }
+
+        .service button {
+            font-size: 1rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            border-width: 0;
+            background-color: #ff7b1b;
+            color: white;
+        }
     </style>
 </head>
 
@@ -240,6 +285,7 @@
         </div>
     </header>
 
+    <!-- Home page headings and image -->
     <section class="grid-container">
         <div class="home-headings">
             <h1>
@@ -263,6 +309,7 @@
         </div>
     </section>
 
+    <!-- Our Features -->
     <section class="features-container">
         <div class="features-heading">
             <h1>Our Features</h1>
@@ -325,6 +372,7 @@
         </div>
     </section>
 
+    <!-- Our Customers -->
     <section class="customers-container">
         <h1>Our Customers</h1>
         <div class="scroller-container">
@@ -367,6 +415,51 @@
                 <img src="<?php echo base_url('images/customers/wankhede.png') ?>" alt="">
                 <img src="<?php echo base_url('images/customers/wedcell.png') ?>" alt="">
                 <img src="<?php echo base_url('images/customers/zeal.png') ?>" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="services-container">
+
+        <h1>Our Services</h1>
+
+        <div class="service">
+            <img src="<?php echo base_url('images/services/exam-creation-platform.jpg') ?>" alt="fastest exam creation platform">
+            <div class="service-text">
+                <h2>India’s fastest online exam creation platform</h2>
+                <p>Create an online exam and online practice test in just 15 minutes and with EDOFOX’s, the top online exam software – Create any online exam in less than 15 minutes using AI driven PDF parsing solution</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="<?php echo base_url('images/services/OMR.jpg') ?>" alt="Automated offline exam conduction (OMR)">
+            <div class="service-text">
+                <h2>Automated offline exam conduction (OMR)</h2>
+                <p>Use our cloud based OMR software to automatically generate and distribute results of any offline exams in no time. Students will also be able generate their comprehensive performance report of full academic year helping them improve perpetually</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+
+        <div class="service">
+            <img src="<?php echo base_url('images/services/learning-management.jpg') ?>" alt="Learning Management System
+">
+            <div class="service-text">
+                <h2>Learning Management System</h2>
+                <p>Manage various critical aspects of your educational setup, such as student enrolment, online fee collection, comprehensive live virtual classroom management, teacher-classroom allocation, and online content creation and management with our optimized, efficient and easy to use LMS.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="<?php echo base_url('images/services/business-management.jpg') ?>" alt="Business/ Institution Management Platform
+">
+            <div class="service-text">
+                <h2>Business/ Institution Management Platform</h2>
+                <p>Our tailored/ custom configured platform enables you to handle crucial functions that include centralized admissions, hostel management, university examination system, outcome-based education, eLearning, and other verticals such as HR, finance, library, Training and Placement, general administration, etc.</p>
+                <button>Read More</button>
             </div>
         </div>
     </section>
