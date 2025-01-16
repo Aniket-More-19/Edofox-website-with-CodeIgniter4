@@ -173,6 +173,50 @@
         .feature p {
             margin-top: 1rem;
         }
+
+        /* customers */
+        .customers-container {
+            margin-top: 1rem;
+            border: 2px red solid;
+        }
+
+        .customers-container h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .scroller-container {
+            margin-top: 2rem;
+            overflow: hidden;
+        }
+
+        .scroll-images {
+            display: flex;
+            width: 100%;
+            animation: scroll 50s linear infinite;
+
+            padding: 1rem;
+            column-gap: 1.5rem;
+        }
+
+        .scroll-images img {
+            width: 100%;
+            height: 7rem;
+        }
+
+        /* Keyframes for scrolling effect */
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+                /* Start position */
+            }
+
+            to {
+                transform: translateX(-550%);
+                /* End position */
+            }
+        }
     </style>
 </head>
 
@@ -277,6 +321,52 @@
                 <img src="<?php echo base_url('images/features/question-bank.png') ?>" alt="">
                 <h1>Question bank</h1>
                 <p>Digitize your PDF questions into massive online question bank</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="customers-container">
+        <h1>Our Customers</h1>
+        <div class="scroller-container">
+            <div class="scroll-images">
+                <img src="<?php echo base_url('images/customers/abs.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/ambitious.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/anees-defence.webp') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/bandewar.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/bansal.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/basveshwar.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/bellweather.jpg') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/bhonshala.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/bright.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/caa.webp') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/deeper.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/excellence.webp') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/KGMittal.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/kisan.jpg') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/kota-guru.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/lakshya-academy.jpeg') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/lakshya.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/lrt.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/MITPune.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/momentum.webp') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/ncc.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/pace.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/phulbani.webp') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/radical.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/reliance-latur.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/reliance.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/sadhan.jpg') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/sharada.jpeg') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/shiv-chatrapati.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/spectrum.jpg') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/sspzest.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/study-smart.jpg') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/unique.jpeg') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/vc.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/wagh.webp') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/wankhede.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/wedcell.png') ?>" alt="">
+                <img src="<?php echo base_url('images/customers/zeal.png') ?>" alt="">
             </div>
         </div>
     </section>
