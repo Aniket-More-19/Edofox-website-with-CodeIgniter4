@@ -262,6 +262,54 @@
             background-color: #ff7b1b;
             color: white;
         }
+
+        /* red-section */
+        .red-section {
+            background-color: rgb(230, 21, 21);
+            color: white;
+
+            padding: 3rem 1rem;
+        }
+
+        .red-section h1 {
+            text-align: center;
+            padding: 2rem 7rem;
+            font-size: 2.5rem;
+        }
+
+        .red-section span {
+            color: black;
+        }
+
+        .info-container {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            column-gap: 4rem;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info img {
+            width: 7rem;
+            height: 7rem;
+        }
+
+        .info-text h2 {
+            font-size: 2.5rem;
+        }
+
+        .info-text p {
+            margin-top: 1rem;
+        }
+
+        /* social links */
     </style>
 </head>
 
@@ -464,7 +512,42 @@
         </div>
     </section>
 
+    <section class="red-section">
+        <h1>Empower the <span>Education Sector</span> with Sustainable <br /> EdTech Solutions</h1>
+        <div class="info-container">
+            <div class="info">
+                <img src="<?php echo base_url('images/red-section/active-students.png') ?>" alt="active students">
+                <div class="info-text">
+                    <h2>247,968+</h2>
+                    <p>Active Students</p>
+                </div>
+            </div>
 
+            <div class="info">
+                <img src="<?php echo base_url('images/red-section/total-test.png') ?>" alt="total test submit">
+                <div class="info-text">
+                    <h2>1,884,350+</h2>
+                    <p>Total Test Submit</p>
+                </div>
+            </div>
+
+            <div class="info">
+                <img src="<?php echo base_url('images/red-section/total-institute.png') ?>" alt="Total institutes">
+                <div class="info-text">
+                    <h2>800+</h2>
+                    <p>Total institutes</p>
+                </div>
+            </div>
+
+            <div class="info">
+                <img src="<?php echo base_url('images/red-section/student-count.png') ?>" alt="Student Counts">
+                <div class="info-text">
+                    <h2>3+</h2>
+                    <p>Student Count</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER: CONTACT US -->
 
