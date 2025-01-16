@@ -65,6 +65,8 @@
             border-radius: 0.2rem
         }
 
+        /* home */
+
         .grid-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -119,17 +121,69 @@
             max-width: 40rem;
             max-height: 40rem;
         }
+
+        /* features */
+
+        .features-container {}
+
+        .features-heading {
+            text-align: center;
+        }
+
+        .features-heading h1 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .features-heading p {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+
+        .features-grid-container {
+            margin-top: 1rem;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+
+            padding: 2rem;
+            border: 2px solid green;
+        }
+
+        .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .feature img {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .feature h1 {
+            margin-top: 1rem;
+        }
+
+        .feature p {
+            margin-top: 1rem;
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- -->
+    <!-- Navigation header -->
     <header>
         <div class="header">
             <div class>
-                <img class="logo" src="<?php echo base_url('images/edofox-logo.png'); ?>" alt="logo">
-                <img class="logo-text" src="<?php echo base_url('images/edofox-logo-text.png'); ?>" alt="logo text">
+                <img class="logo" src="<?php echo base_url('images/home/edofox-logo.png'); ?>" alt="logo">
+                <img class="logo-text" src="<?php echo base_url('images/home/edofox-logo-text.png'); ?>" alt="logo text">
             </div>
             <nav class="navigation">
                 <ul>
@@ -161,7 +215,69 @@
             </div>
         </div>
         <div class="home-img-container">
-            <img src="<?php echo base_url('images/home-page-img.png') ?>" alt="home page computers image">
+            <img src="<?php echo base_url('images/home/home-page-img.png') ?>" alt="home page computers image">
+        </div>
+    </section>
+
+    <section class="features-container">
+        <div class="features-heading">
+            <h1>Our Features</h1>
+            <p>EDOFOX, is new-age EdTech online assessment platform, offering features that enable you to manage any function of your education/ coaching institute</p>
+        </div>
+        <div class="features-grid-container">
+            <div class="feature">
+                <img src="<?php echo base_url('images/features/super-fast-exam-creation.png') ?>" alt="">
+                <h1>Super Fast Exam Creation</h1>
+                <p>In 15 mins, convert any type of PDF in online exam</p>
+            </div>
+
+            <div class="feature">
+                <img src="<?php echo base_url('images/features/cloud-based-omr.png') ?>" alt="">
+                <h1>Cloud Based OMR</h1>
+                <p>In minutes Automate offline MCQ tests and publish them</p>
+            </div>
+
+            <div class="feature">
+                <img src="<?php echo base_url('images/features/realtime-attendance.png') ?>" alt="">
+                <h1>Realtime Attendance</h1>
+                <p>Integrate your biometric devices to track student’s attendance</p>
+            </div>
+
+            <div class="feature">
+                <img src="<?php echo base_url('images/features/crm-and-marketing.png') ?>" alt="">
+                <h1>CRM and Marketing</h1>
+                <p>Manage all of your admission enquiries at one place</p>
+            </div>
+
+            <div class="feature">
+                <img src="<?php echo base_url('images/features/online-fees-collection.png') ?>" alt="">
+                <h1>Online Fees Collection</h1>
+                <p>Seamless fees management for online and cash payments</p>
+            </div>
+
+            <div class="feature">
+                <img src="<?php echo base_url('images/features/parent-communication.png') ?>" alt="">
+                <h1>Parent Communication</h1>
+                <p>Notify parents about performance, notices and attendance</p>
+            </div>
+
+            <div class="feature">
+                <img src="<?php echo base_url('images/features/doubt-management.png') ?>" alt="">
+                <h1>Doubt management</h1>
+                <p>Resolve all your student doubts on one dashboard</p>
+            </div>
+
+            <div class="feature">
+                <img src="<?php echo base_url('images/features/timetable-and-planner.png') ?>" alt="">
+                <h1>Timetable and planner</h1>
+                <p>Digitize your academic plan into a digital time table</p>
+            </div>
+
+            <div class="feature">
+                <img src="<?php echo base_url('images/features/question-bank.png') ?>" alt="">
+                <h1>Question bank</h1>
+                <p>Digitize your PDF questions into massive online question bank</p>
+            </div>
         </div>
     </section>
 
